@@ -2,7 +2,7 @@
 resource "google_compute_instance" "firstvm" {
   name         = "helloworld"
   machine_type = "n1-standard-1"
-  zone         = "var.zone"
+  zone         = var.zone
 
   # Defini a Imagem da VM
   boot_disk {
